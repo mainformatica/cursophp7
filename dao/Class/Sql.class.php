@@ -14,7 +14,7 @@
         
         foreach ($parameters as $key => $value) {
  			
- 			$statment->bindParam($key. $value);
+ 			$statment->bindParam($key, $value);
  		}
 
     }

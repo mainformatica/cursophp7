@@ -1,9 +1,10 @@
 <?php
 
 require_once ("cf.php");
-$sql = new Sql();
-$usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
-echo json_encode($usuarios);
+$user = new Usuarios();
+$user ->loadById(4);
+
+echo $user;
 
 ?>
